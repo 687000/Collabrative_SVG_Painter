@@ -1,0 +1,9 @@
+{
+   "name": "Painter",
+   "description": "Collaborative SVG drawing canvas",
+   "author": "Jiani Liu",
+   "dependencies": {
+      "express": "4.x",
+      "socket.io": "*"
+   }
+}

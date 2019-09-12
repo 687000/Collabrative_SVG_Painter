@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Painter</title>
+</head>
+<body>
+    <div id="drawing" tabindex="0"></div>
+    <div id="shape" class="actions x">
+        <svg id="pen" class="icon"><path fill="none"  d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z" /></svg>
+      <svg id="highlighter" class="icon">
+        <path fill="none" d="M20.71,7.04C20.37,7.38 20.04,7.71 20.03,8.04C20,8.36 20.34,8.69 20.66,9C21.14,9.5 21.61,9.95 21.59,10.44C21.57,10.93 21.06,11.44 20.55,11.94L16.42,16.08L15,14.66L19.25,10.42L18.29,9.46L16.87,10.87L13.12,7.12L16.96,3.29C17.35,2.9 18,2.9 18.37,3.29L20.71,5.63C21.1,6 21.1,6.65 20.71,7.04M3,17.25L12.56,7.68L16.31,11.43L6.75,21H3V17.25Z" /></svg>
+        <svg id="rec" class="icon">
+          <path fill="none" d="M4,6V19H20V6H4Z" /></svg>
+      <svg id="eraser" class="icon">
+          <path fill='none' d="M16.24,3.56L21.19,8.5C21.97,9.29 21.97,10.55 21.19,11.34L12,20.53C10.44,22.09 7.91,22.09 6.34,20.53L2.81,17C2.03,16.21 2.03,14.95 2.81,14.16L13.41,3.56C14.2,2.78 15.46,2.78 16.24,3.56M4.22,15.58L7.76,19.11C8.54,19.9 9.8,19.9 10.59,19.11L14.12,15.58L9.17,10.63L4.22,15.58Z" /></svg>
+
+    <!--  <svg id="selectMode" class="icon">
+          <rect width="21" height="21" style="fill:none;stroke-width:1.8" stroke-dasharray="4"/></svg>
+      </svg> -->
+      <svg id="zoom_in" class="icon">
+          <path fill='none' d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+       </svg>
+      <svg id="zoom_out" class="icon">
+         <path fill='none' d="M19,13H5V11H19V13Z" />
+       </svg>
+      <svg id="clear" class="icon">
+        <path fill="none" d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M9,8H11V17H9V8M13,8H15V17H13V8Z" /></svg>
+      <svg id="download" class="icon">
+        <path fill="none" d="M14,2L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H14M18,20V9H13V4H6V20H18M12,19L8,15H10.5V12H13.5V15H16L12,19Z" />
+        </svg>
+      <ul  onclick="selectColor(event)" class='colorCir'>
+        <li id="black" class="black"></li>
+        <li id="red" class="red"></li>
+        <li id="yellow" class="yellow"></li>
+        <li id="blue" class="blue"></li>
+        <li id="green" class="green"></li>
+    </ul>
+          <ul   class='lineWidth'>
+        <li onclick="selectWidth(this.id)" id="thin" class="thin"></li>
+        <li onclick="selectWidth(this.id)" id="thick" class="thick"></li>
+    </ul>
+    </div>
+  <div>
+  <input type='text' id="code"/>
+  </div>
+  <div>
+    <button type="button" class="button" id="copybutton">Copy</button>
+  <button type="button" class="button" id="emptybutton">Empty</button>
+  <button type="button" class="button" id="applybutton">Apply</button>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="./src/svg.min.js"></script>
+    <script src="./src/svg.draggy.min.js"></script>
+    <script src="./src/svg.select.min.js"></script>
+    <script src="./src/svg.resize.min.js"></script>
+    <script src="./src/svg.draw.min.js"></script>
+    <script src="./client.js"></script>
+  </body>
+</html>

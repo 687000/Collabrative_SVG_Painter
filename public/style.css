@@ -1,0 +1,14 @@
+#drawing {height: 600px;width:1024px;border: 1px solid #ccc;}
+#code {height: 168px;width:1024px;border: 1px solid #ccc;}
+ul,ol{list-style: none;}
+.button {border-radius: 2px;background-color:white;color:grey;border: none;padding: 8px 15px;text-align: center;border: 1.5px solid grey;font-size: 14px;cursor: pointer;}.button:hover {transform: scale(1.1);transition-duration: 0.5s;}.button:active {border: 1.5px solid black;}
+.icon {width: 1em; height: 1em;vertical-align: -0.15em;stroke:grey;fill: grey;overflow: hidden;}.icon:hover {transform: scale(1.2);}
+.actions{position: fixed;top:0px;left:20 18px;padding-top:20px;padding-left:20px;}
+.actions svg{width:1.2em;height:1.2em;transition: all 0.3s;margin:10px;}
+.actions svg.active{fill: black;stroke: black;transform: scale(1.2);}
+table, th, td {border: 0.5px solid grey;}
+th, td {border-radius: 15%;padding: 10px;}
+.colorCir{left:-10px;top:70px;position: fixed;}.colorCir li{border: 1px solid rgb(128, 128, 128);height:20px;width: 20px;border-radius: 50%;margin-bottom:10px;}
+.colorCir .red{background:red;}.colorCir .yellow{background:rgb(255, 255, 102);}.colorCir .blue{background:rgb(0, 128, 255);}.colorCir .black{background:black;}.colorCir .green{background:rgb(153, 255, 153);}.colorCir .active{transform: scale(1.2);}.colorCir :hover{transform: scale(1.2);transition-duration: 0.5s;}
+.lineWidth{position: fixed;left:-25px;top:220px;}.lineWidth .thin{height:0px;width:40px;border-top:3px solid black;margin:15px;}.lineWidth .thick{height:0px;width:40px;border-top:8px solid black;margin:15px;}.lineWidth .active{transform: scale(1.2);}.lineWidth :hover{transform: scale(1.2);transition-duration: 0.5s;}
+.svg_select_points{stroke:#358efc;stroke-width:6px;stroke-opacity:.45;fill:#358efc;fill-opacity:0}.svg_select_points_lt{cursor:nw-resize}.svg_select_points_rt{cursor:ne-resize}.svg_select_points_rb{cursor:se-resize}.svg_select_points_lb{cursor:sw-resize}.svg_select_points_t{cursor:n-resize}.svg_select_points_r{cursor:e-resize}.svg_select_points_b{cursor:s-resize}.svg_select_points_l{cursor:w-resize}.svg_select_points_rot{stroke-width:1;stroke:#000;fill:#f9ffed}.svg_select_points_point{cursor:move}.svg_select_boundingRect{stroke-width:1;fill:none;stroke-dasharray:5 3;stroke:7fb6fa;stroke-opacity:.8;fill-opacity:.1;pointer-events:none}
