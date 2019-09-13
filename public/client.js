@@ -238,6 +238,19 @@ zoom_in.onmousedown=function(){
 zoom_in.onmouseup=function(){
     zoom_in.classList.remove('active');
  }
+zoom_out.onmousedown=function(){
+  viewwidth=viewwidth*1.25;
+  viewheight=viewheight*1.25;
+  drawing.viewbox(coordinateX, coordinateY, viewwidth,viewheight);
+    pen.classList.remove('active');
+    eraser.classList.remove('active');
+    highlighter.classList.remove('active');
+    rec.classList.remove('active');
+    zoom_out.classList.add('active');
+ }
+zoom_out.onmouseup=function(){
+    zoom_out.classList.remove('active');
+ }
 document.getElementById("drawing").addEventListener("keydown", function(event){
   const key = event.key.toLowerCase();
   if(key=="arrowdown"){
@@ -257,19 +270,6 @@ document.getElementById("drawing").addEventListener("keydown", function(event){
     drawing.viewbox(coordinateX,coordinateY, viewwidth,viewheight);
   }
 });
-zoom_out.onmousedown=function(){
-  viewwidth=viewwidth*1.25;
-  viewheight=viewheight*1.25;
-  drawing.viewbox(coordinateX, coordinateY, viewwidth,viewheight);
-    pen.classList.remove('active');
-    eraser.classList.remove('active');
-    highlighter.classList.remove('active');
-    rec.classList.remove('active');
-    zoom_out.classList.add('active');
- }
-zoom_out.onmouseup=function(){
-    zoom_out.classList.remove('active');
- }
 var realclick=true;
 clear.onclick=function(){
   shapes = [];
