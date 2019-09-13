@@ -1,8 +1,10 @@
 var drawing = SVG('drawing').size(1024,600);
 var socket  = io.connect();
+//All visible elements on canvas
 var shapes = [];
 let index = 0;
 let shape;
+//Determine whether an element has been seleceted
 var dragging=false;
 var penEnabled=false;
 var eraserEnabled=false;
