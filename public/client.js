@@ -155,6 +155,7 @@ green.onclick=function(){
     blue.classList.remove('active');
     red.classList.remove('active');
 }
+//Canvas tools
 pen.onclick=function(){
     unselect();
     dragging=false;
