@@ -11,10 +11,6 @@ var penEnabled=false;
 var eraserEnabled=false;
 var hlEnabled=false;
 var recEnabled=false;
-//
-var pendraggy=false;
-var hldraggy=false;
-var recdraggy=false;
 var colorpicker='black';
 var widthpicker=3;
 //websocket functions
@@ -163,9 +159,6 @@ green.onclick=function(){
 pen.onclick=function(){
     unselect();
     dragging=false;
-    pendraggy=true;
-    hldraggy=false;
-    recdraggy=false;
     penEnabled=true;
     eraserEnabled=false;
     hlEnabled=false;
@@ -180,9 +173,6 @@ pen.onclick=function(){
 eraser.onclick=function(){
     unselect();
     dragging=false;
-    pendraggy=false;
-    hldraggy=false;
-    recdraggy=false;
     penEnabled=false;
     eraserEnabled=true;
     hlEnabled=false;
