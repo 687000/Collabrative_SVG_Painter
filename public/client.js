@@ -11,6 +11,7 @@ var penEnabled=false;
 var eraserEnabled=false;
 var hlEnabled=false;
 var recEnabled=false;
+//
 var pendraggy=false;
 var hldraggy=false;
 var recdraggy=false;
