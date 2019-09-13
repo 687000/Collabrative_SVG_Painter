@@ -98,6 +98,7 @@ function ImportNew(data){
   newViewBoxHeight=data.newViewBoxHeight;
   drawing.svg(data.text);
 }
+//Pick color and line width
 function selectColor(e){
   colorpicker=window.getComputedStyle(e.target, null).backgroundColor;
 }
