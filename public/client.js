@@ -1,6 +1,6 @@
 var drawing = SVG('drawing').size(1024,600);
 var socket  = io.connect();
-//All visible elements on canvas
+//Array of all visible elements on canvas
 var shapes = [];
 let index = 0;
 let shape;
@@ -242,6 +242,7 @@ zoom_out.onmousedown=function(){
 zoom_out.onmouseup=function(){
     zoom_out.classList.remove('active');
  }
+//Scroll the canvas by arrow keys
 document.getElementById("drawing").addEventListener("keydown", function(event){
   const key = event.key.toLowerCase();
   if(key=="arrowdown"){
