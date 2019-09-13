@@ -6,6 +6,7 @@ let index = 0;
 let shape;
 //Determine whether an element has been seleceted
 var dragging=false;
+//Determind which tool has been selected
 var penEnabled=false;
 var eraserEnabled=false;
 var hlEnabled=false;
