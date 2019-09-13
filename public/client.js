@@ -365,6 +365,7 @@ download.onmousedown=function(){
 download.onmouseup=function(){
     download.classList.remove('active');
  }
+//Textarea tools
 //User can copy current SVG content
 copybutton.onclick=function(){
   var textBox = document.getElementById("code");
