@@ -13,6 +13,7 @@ var hldraggy=false;
 var recdraggy=false;
 var colorpicker='black';
 var widthpicker=3;
+//websocket functions
 socket.on('draw_line',DrawNew);
 function DrawNew(data){
   option = {
