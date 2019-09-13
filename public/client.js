@@ -688,6 +688,7 @@ SVG.Element.prototype.draw.extend('line polyline polygon', {
     delete this.set;
   },
 });
+//Get array of points. Return optimized path 
 function BezierCurve(str,colorpicker,widthpicker){
   var words = str.split(' ');
   var size =1;
