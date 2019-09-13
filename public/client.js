@@ -438,6 +438,7 @@ const getDrawObject = () => {
        return drawing.rect().attr(option);
   }
 }
+//Event listeners to draw lines/rectangles
 drawing.on('mousedown', event => {
   selected=1;
   const shape = getDrawObject();
@@ -575,6 +576,7 @@ var click = function() {
   }
 }
 var selected=1;
+//Event listenser to select/unselect/drag/resize an element
 drawing.on("mousedown", event => {
   var i=0;
   for(i=0;i<index;i++){
