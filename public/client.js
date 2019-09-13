@@ -262,6 +262,8 @@ document.getElementById("drawing").addEventListener("keydown", function(event){
     drawing.viewbox(coordinateX,coordinateY, viewwidth,viewheight);
   }
 });
+//Since applybutton will simulate clicking clear button, only "onclick" event by real human user 
+//will send/smit 'clean_line' command by websocket
 var realclick=true;
 clear.onclick=function(){
   shapes = [];
