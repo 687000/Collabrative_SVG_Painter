@@ -187,9 +187,6 @@ eraser.onclick=function(){
 highlighter.onclick=function(){
     unselect();
     dragging=false;
-    pendraggy=false;
-    hldraggy=true;
-    recdraggy=false;
     penEnabled=false;
     eraserEnabled=false;
     hlEnabled=true;
@@ -204,9 +201,6 @@ highlighter.onclick=function(){
 rec.onclick=function(){
     unselect();
     dragging=false;
-    pendraggy=false;
-    hldraggy=false;
-    recdraggy=true;
     penEnabled=false;
     eraserEnabled=false;
     hlEnabled=false;
@@ -288,9 +282,6 @@ clear.onclick=function(){
 download.onmousedown=function(){
     unselect();
     dragging=false;
-    pendraggy=false;
-    hldraggy=false;
-    recdraggy=false;
     penEnabled=false;
     eraserEnabled=false;
     hlEnabled=false;
