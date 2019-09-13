@@ -4,9 +4,9 @@ var socket  = io.connect();
 var shapes = [];
 let index = 0;
 let shape;
-//Determine whether an element has been seleceted
+//Determine whether an element is seleceted
 var dragging=false;
-//Determind which tool has been selected
+//Determind which tool is selected
 var penEnabled=false;
 var eraserEnabled=false;
 var hlEnabled=false;
